@@ -1,29 +1,41 @@
-# Nuxt 3 Minimal Starter
+# Currency Converter
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+Проект написан на базе Nuxt 3 ([Документация](https://v3.nuxtjs.org))
 
-## Setup
+## Установка
 
-Make sure to install the dependencies
+После копирования репозитория необходимо установить зависимости:
 
 ```bash
 yarn install
+// или
+npm install
 ```
 
-## Development
+А так же создать файл .env, в котором необходимо прописать токен, для доступа к [freecurrencyapi.net](https://freecurrencyapi.net/dashboard)
 
-Start the development server on http://localhost:3000
+```bash
+API_TOKEN=%ВАШ ТОКЕН%
+```
+
+## Разработка
+
+Запуск проекта на локальной машине по адресу http://localhost:3000:
 
 ```bash
 yarn dev
+// или
+npm run dev
 ```
 
-## Production
+## Сборка
 
-Build the application for production:
+Собрать проект для релиза:
 
 ```bash
 yarn build
+// или
+npm run build
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+Подробная информация: [deployment documentation](https://v3.nuxtjs.org/docs/deployment).

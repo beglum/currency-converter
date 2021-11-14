@@ -1,0 +1,124 @@
+@import './_variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  color: $text-color-default;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+article {
+  width: min(950px, 100%);
+  margin: 0 auto;
+  padding: 1em;
+}
+
+select,
+button,
+input {
+  font-size: 1rem;
+}
+
+input {
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.form-control {
+  display: flex;
+  margin-bottom: 1rem;
+
+  input,
+  select {
+    height: 2.4em;
+    margin: 0 0.15em;
+    outline: none;
+    border: $border-default;
+    border-radius: $border-radius-default;
+    color: $text-color-default;
+
+    &:focus {
+      border: $border-focus;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0 0.7em;
+  }
+  select {
+    position: relative;
+    cursor: pointer;
+    padding: 0 0.4em;
+
+    option {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.transparent {
+  border: none;
+  background-color: transparent;
+}
+
+.btn {
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: $border-radius-default;
+
+  &:hover {
+    color: $text-color-hover;
+  }
+}
+
+.f-2 {
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.table {
+  .row {
+    &:nth-child(2n) {
+      background-color: $table-row-even-background-color;
+    }
+    &:not(:nth-child(2n)) {
+      background-color: $table-row-odd-background-color;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: $text-color-hover;
+}
+
+.border-radius {
+  border-radius: $border-radius-default;
+}

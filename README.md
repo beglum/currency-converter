@@ -12,7 +12,7 @@ yarn install
 npm install
 ```
 
-А так же создать файл .env, в котором необходимо прописать токен, для доступа к [freecurrencyapi.net](https://freecurrencyapi.net/dashboard)
+А так же создать файл .env в корне проекта, в котором необходимо прописать токен, для доступа к [freecurrencyapi.net](https://freecurrencyapi.net/dashboard)
 
 ```bash
 API_TOKEN=%ВАШ ТОКЕН%
